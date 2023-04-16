@@ -1,0 +1,25 @@
+{
+  "title": "Intro",
+  "description": "Install OPA in Kubernetes and use it",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Installation and first contact",
+        "text": "step1/text.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "gatekeeper.yaml", "target": "/root", "chmod": "+x"},
+        {"file": "opa_template.yaml", "target": "/root", "chmod": "+x"},
+        {"file": "opa_constraint.yaml", "target": "/root", "chmod": "+x"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
